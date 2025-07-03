@@ -1,0 +1,13 @@
+@color: #45ff6d;
+
+@color-dark: darken(@color, 25%);
+@color-light: lighten(@color, 25%);
+
+a {
+  color: @color-dark;
+  transition: color 0.3s;
+
+  &:hover {
+    color: @color-light;
+  }
+}

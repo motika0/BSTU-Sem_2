@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.container  div {
+    background-color: blanchedalmond;
+    margin: 5px;
+    flex: 0 0 7em;
+}
+.container  div:nth-child(2) {
+    background-color: blueviolet;
+flex:0 7em;
+}
+.container  div:nth-child(3) {
+    background-color: chocolate;
+    flex:1;
+    
+}
+.container  div:nth-child(4) {
+    background-color: cornsilk;
+    flex:2;
+}

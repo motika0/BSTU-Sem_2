@@ -1,0 +1,18 @@
+div{
+    background-color: chocolate;
+    width: 20vw;
+    height: 23vw;
+    margin: 1%;
+float: left;
+}
+@media screen and (min-width:480px) and (max-width:800px){
+    div{
+width: 35vw;
+    }
+}
+@media screen and (max-width:480px){
+div{
+    float: none;
+}
+
+}

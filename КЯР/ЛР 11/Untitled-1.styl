@@ -1,0 +1,23 @@
+
+text-color = #333
+
+
+border-styles = 1px solid #ccc
+
+
+border-color = text-color
+
+
+border-mixin()
+  border border-styles
+  border border-color
+div
+  border-mixin()
+
+darken-color(color, amount)
+  return darken(color, amount)
+
+
+color1 = #3498db
+color2 = lighten(color1, 10%)
+color3 = darken(color1, 20%)

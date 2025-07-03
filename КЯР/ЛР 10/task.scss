@@ -1,0 +1,25 @@
+@mixin color($r,$b,$g){
+    color: $r;
+    background-color: $b;
+    border-color: $g;
+}
+@mixin h($h){
+height: $h;
+}
+@mixin w($w){
+    height: $w;
+    }
+@for $i from 1 through 100 {
+    .f#{$i} {
+        font-size: #{$i}px;
+    }
+}
+.block{
+    width: 1000px;
+    height: 2000px;
+    p{
+        @include color(red,blue,green);
+        @include h(200px);
+        @include w(200px);
+    }
+}

@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1800px;
+}
+
+.container div {
+    width: 600px;
+    height: 600px;
+}
+
+.container div:nth-child(odd) {
+    background-color: black;
+}
+
+.container div:nth-child(even) {
+    background-color: white;
+}

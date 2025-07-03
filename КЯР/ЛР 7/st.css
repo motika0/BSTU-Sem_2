@@ -1,0 +1,133 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.brand {
+  font-size: 24px;
+  font-family: "Ribeye", serif;
+}
+
+.button {
+  background: #C9453B;
+  border-radius: 5%;
+  border: 0px;
+  color: white;
+  font-size: 16px;
+}
+
+.menu {
+  padding: 0%;
+  display: flex;
+  gap: 50px;
+}
+.menu__item {
+  font-weight: 500;
+  list-style-type: none;
+}
+
+.header {
+  padding: 12px 0;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__button {
+  padding: 14px 35px 13px 36px;
+}
+
+.main {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url(../images/Rectangle\ 31.jpg);
+  background-size: cover;
+  padding-top: 176px;
+  padding-bottom: 244px;
+}
+.main__wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.main-h1 {
+  font-family: "Gelasio", serif;
+  font-size: 65px;
+  font-weight: 700;
+  color: white;
+  white-space: pre-line;
+}
+.main-p {
+  margin: 0px;
+  font-family: "Gelasio", serif;
+  color: white;
+  font-size: 18px;
+  white-space: pre-line;
+}
+.main__button {
+  padding: 18px 46px 17px 47px;
+  width: 187px;
+}
+
+.location {
+  padding: 140px 230px;
+}
+.location__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.location-h2 {
+  font-family: "Gelasio", serif;
+  font-size: 43px;
+  font-weight: 500;
+}
+.location-p {
+  font-size: 18px;
+  color: gray;
+  white-space: pre-line;
+  text-align: center;
+}
+.location__place {
+  display: flex;
+  gap: 30px;
+  margin-top: 2vh;
+}
+
+.photo {
+  border-radius: 4%;
+  border: 1px solid rgb(224, 224, 224);
+}
+.photo__div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 30px;
+}
+.photo__div-p {
+  color: gray;
+  font-size: 18px;
+  font-weight: 400;
+  white-space: pre-line;
+}
+.photo__div-h3 {
+  font-family: "Gelasio", serif;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.photo_boxshadow {
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+  background-color: #edf7f7;
+  padding: 70px 0 46px;
+}/*# sourceMappingURL=st.css.map */

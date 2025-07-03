@@ -1,0 +1,44 @@
+.container{
+    background-color: darkgray;
+    margin: 5px;
+}
+li{
+    list-style-type:none;
+    margin: 4px;
+}
+ul{
+    display: flex;
+    background-color: darkgray;
+}
+.container div {
+    padding: 25px;
+}
+
+.first {
+    margin: 5px;
+    justify-content: space-between;
+}
+.second {
+    margin: 5px;
+    justify-content: flex-start;
+}
+.third {
+    margin: 5px;
+    justify-content: flex-end;
+}
+.c4 {
+    margin: 5px;
+    justify-content: center;
+}
+.c5{
+    margin: 5px;
+    flex-direction: column;
+}
+.gg div{
+    font-weight: bold;
+}
+.gg{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}

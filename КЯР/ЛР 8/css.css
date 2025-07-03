@@ -1,0 +1,293 @@
+.block {
+    border: 1px solid black;
+}
+
+.first {
+    display: grid;
+    grid-template-columns: 50px 100px 20px 300px;
+    grid-template-rows: repeat(5, 100px);
+    margin-bottom: 10px;
+}
+
+.second {
+    display: grid;
+    grid-template-columns: 40px 50px auto 50px 40px;
+    grid-template-rows: 25% 100px auto;
+    height: 200px;
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.third {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    margin-bottom: 10px;
+    height: 100px;
+}
+
+.fourth {
+    display: grid;
+    grid-template-columns: 100px repeat(3, auto) 50px;
+    grid-template-rows: 1fr;
+    margin-bottom: 100px;
+    height: 100px;
+}
+
+.five {
+    display: grid;
+    grid-template-areas: 
+    "img h1 price"
+    "img status status"
+    "img place place"
+    "img text revue"
+    "img footer footer";
+    box-shadow: 1px -1px 3px rgb(75, 75, 75);
+    grid-gap: 10px;
+    width: 900px;
+    padding: 10px;
+    margin-bottom: 100px;
+}
+
+.status,
+.place,
+.price,
+.revue {
+    display: flex;
+    align-items: center;
+}
+.five img{
+    height: 500px;
+    width: 400px;
+}
+.h1{
+    grid-area: h1;
+}
+.status{
+    grid-area: status;
+}
+.five .img {
+    grid-area:img;
+}
+
+.place {
+    grid-area: place;
+}
+
+.revue {
+    grid-area: revue;
+}
+
+.revue button {
+    align-self: flex-start;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.text {
+    grid-area: text;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.six {
+    width: 600px;
+    padding: 10px;
+    box-shadow: 1px -1px 3px rgb(75, 75, 75);
+    height: auto;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: repeat(4, 35px);
+}
+
+input {
+    height: 20px;
+    margin: auto 0;
+}
+
+.f {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+input.eu {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+input.deux {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.n {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.d {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+input.troia {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.s {
+    grid-column: span 3;
+}
+
+@media screen and (max-width:576px) {
+    form {
+        grid-template-columns: 600px;
+    }
+
+    input {
+        grid-column: 1;
+        height: 20px;
+        margin: auto 0;
+    }
+
+    .f {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    input.eu {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    input.deux {
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    .n {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .d {
+        grid-column: 1;
+        grid-row: 5;
+    }
+
+    input.troia {
+        grid-column: 1;
+        grid-row: 6;
+    }
+
+    .s {
+        grid-column: 1;
+        grid-row: 7;
+    }
+
+}
+
+.sssix {
+    display: grid;
+    grid-template-columns: min-content min-content min-content;
+    grid-template-rows: 100px 100px;
+    margin-bottom: 100px;
+}
+
+.sssix2 {
+    display: grid;
+    grid-template-columns: max-content max-content max-content;
+    grid-template-rows: 100px 100px;
+}
+
+.eith {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.card {
+    background-color: lightblue;
+    padding: 10px;
+    text-align: center;
+}
+
+.nine {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: 120px 120px 120px;
+    margin-bottom: 100px;
+}
+
+.chip {
+    padding: 45px 40px;
+    border: 1px black solid;
+}
+
+.E {
+    background-color: darkseagreen;
+    grid-column: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.A {
+    background-color: rgb(252, 171, 255);
+}
+
+.C {
+    background-color: darkseagreen;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.B {
+    background-color: rgb(255, 186, 57);
+}
+
+.I {
+    background-color: rgb(252, 171, 255);
+}
+
+.J {
+    background-color: rgb(255, 186, 57)
+}
+
+.eleven {
+    grid-gap: 5px;
+    width: 300px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.eleven span {
+    padding: 10px;
+    background-color: rgb(37, 37, 37);
+    color: rgb(206, 206, 206);
+    border-radius: 5px;
+}
+
+.EE {
+    grid-column: span 4;
+}
+
+.DD {
+    grid-column: span 3;
+}
+
+.BB {
+    grid-column: span 2;
+}
+
+.AA {
+    grid-column: span 2;
+}

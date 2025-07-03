@@ -1,0 +1,16 @@
+div{
+    background-color: aquamarine;
+    width: 45vw;
+    height: 100px;
+    margin: 1%;
+}
+div{
+    float: left;
+}
+@media screen and (max-width:800px){
+    div {
+        float: none;
+
+    }
+
+}

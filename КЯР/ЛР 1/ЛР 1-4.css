@@ -1,0 +1,4 @@
+@media (orientation:portrait) and (max-width:500px){
+    p{ display: none;
+    }
+}

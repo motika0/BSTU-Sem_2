@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+.container div{
+    width: 50px;
+    height: 50px;
+    background-color: blueviolet;
+}
+.container div:nth-child(1), .container div:nth-child(5){
+    align-self:flex-end;
+}
+.container div:nth-child(3){
+    align-self:flex-start;
+}
